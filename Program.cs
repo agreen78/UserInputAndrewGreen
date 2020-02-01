@@ -6,9 +6,20 @@ namespace UserInputAndrewGreen
     {
         static void Main(string[] args)
         {
-            // Pause to display greeting
-            Console.WriteLine("Hi, this is Andrew Green.");
-            Console.ReadKey(true);
+
+            string greeting = "Hi, this is Andrew Green.";
+            string question;
+
+            Console.WriteLine(greeting);
+
+            Console.WriteLine("Please ask a question and hit ENTER to continue:");
+
+            // typecasting not needed  
+            // as ReadLine returns string 
+            question = Console.ReadLine();
+
+            Console.WriteLine("You typed: " + question + "!");
+            
         }
     }
 }
